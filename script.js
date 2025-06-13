@@ -1,14 +1,16 @@
 let grid = true;
 let size = 15;
-let color = document.querySelector(".colorPicker").value;
 let isRainbow = false;
-// let rainbowColors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
-let rainbowColors = ["rgb(200, 190, 255)","rgb(222, 168, 248)", "rgb(168, 222, 258)","rgb(189, 250, 205)",
+let color;
+let rainbowColors = ["rgb(200, 190, 255)","rgb(222, 168, 248)", "rgb(168, 222, 255)","rgb(189, 250, 205)",
          "rgb(243, 250, 189)","rgb(250, 227, 189)","rgb(248, 172, 171)","rgb(254, 170, 212)"]
 let rainbowIndex = 0;
 
-createBoard(size);
-
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector(".colorPicker").value = "#A8DEFF";
+    color = document.querySelector(".colorPicker").value;
+    createBoard(size);
+});
 function increasePixels() {
      if(size <= 100) {
         size += 5;
@@ -104,15 +106,8 @@ colorPicker.addEventListener("input", (e) => {
 
 const rainbow = document.querySelector(".rainbow");
 
-rainbow.addEventListener("click", () => isRainbow = !isRainbow);
-
 rainbow.addEventListener("click", function (e) {
-    if(isRainbow){
-        e.target.style.background = `linear-gradient(to right,rgb(200, 190, 255) 0%,rgb(222, 168, 248) 10%,rgb(168, 222, 258) 30%,rgb(189, 250, 205) 42%,
-         rgb(243, 250, 189) 58%,rgb(250, 227, 189) 70%,rgb(248, 172, 171) 95%,rgb(254, 170, 212) 100%)`;
-        
-    }else {
-        e.target.style.background = "white";
-    }    
+    isRainbow = !isRainbow;
+    e.target.classList.toggle("rainbow-active", isRainbow);  
 
 });

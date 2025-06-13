@@ -64,10 +64,7 @@ button:hover {
     height: 700px;
     width: 700px;
     display: flex;
-    flex-direction: column;  
-    
-    
-    
+    flex-direction: column;   
 }
 
 .row {
@@ -75,8 +72,6 @@ button:hover {
     flex-grow: 1;
     -webkit-user-drag: none;
     
-    
-
 }
 
 .tile {
@@ -84,7 +79,7 @@ button:hover {
     flex-grow: 1;
     text-align: center;
     background-color: whitesmoke;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
 }
 
 .rainbow-active {
@@ -93,6 +88,4 @@ button:hover {
     rgb(189, 250, 205) 42%, rgb(243, 250, 189) 58%, rgb(250, 227, 189) 70%,
     rgb(248, 172, 171) 95%, rgb(254, 170, 212) 100%);
 }
-
-
 

@@ -77,7 +77,12 @@ function createBoard(size) {
 
 function clearBoard() {
     const tiles = document.querySelectorAll(".tile");
-    tiles.forEach((tile) => tile.style.background = "whitesmoke");
+    tiles.forEach((tile) => {
+        tile.style.transition = "background-color 1s";
+        tile.style.background = "whitesmoke";
+        setTimeout(() => { tile.style.transition = ""}, 1000);
+       
+    });
 }
 
 function toggleGrid (){
@@ -107,6 +112,7 @@ colorPicker.addEventListener("input", (e) => {
 const rainbow = document.querySelector(".rainbow");
 
 rainbow.addEventListener("click", function (e) {
+  
     isRainbow = !isRainbow;
     e.target.classList.toggle("rainbow-active", isRainbow);  
 

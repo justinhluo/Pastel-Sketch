@@ -84,6 +84,7 @@ button:hover {
     flex-grow: 1;
     text-align: center;
     background-color: whitesmoke;
+    transition: background-color 0.3s;
 }
 
 .rainbow-active {
@@ -93,8 +94,5 @@ button:hover {
     rgb(248, 172, 171) 95%, rgb(254, 170, 212) 100%);
 }
 
-/* .rainbow-active:hover {
-  filter: brightness(0.9);
-} */
 
 

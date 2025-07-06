@@ -12,7 +12,6 @@ A simple and colorful pixel art sketching web app built with HTML, CSS, and Java
 - **Toggle grid:** Show or hide grid lines between pixels.
 - **Adjust canvas size:** Increase or decrease pixel resolution (canvas size changes in increments of 5).
 - **Responsive pixel drawing:** Click and drag to paint pixels.
-- Built using **flexbox** for layout, no CSS Grid used.
 
 ---
 

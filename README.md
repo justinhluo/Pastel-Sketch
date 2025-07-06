@@ -16,23 +16,9 @@ A simple and colorful pixel art sketching web app built with HTML, CSS, and Java
 
 ---
 
-## Demo
+## Demo https://justinhluo.github.io/Pastel-Sketch/
 
 ![image](https://github.com/user-attachments/assets/3767d970-0926-4d9e-a9e0-cd74e12ef2b8)
 
 
----
 
-## Getting Started
-
-### Prerequisites
-
-- Modern web browser (Chrome, Firefox, Edge, Safari, etc.)
-
-### Installation
-
-1. Clone this repository:
-
-   git clone https://github.com/yourusername/pastel-sketch.git
-   cd pastel-sketch
-2. Open index.html in your browser.

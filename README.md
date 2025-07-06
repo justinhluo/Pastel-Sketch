@@ -1,6 +1,7 @@
 # Pastel Sketch
 
 A simple and colorful pixel art sketching web app built with HTML, CSS, and JavaScript — no CSS Grid, just flexbox! Draw with pastel colors or a rainbow palette, toggle grid lines, and adjust the canvas resolution dynamically.
+Part of The Odin Project full stack cirriculum.
 
 ---
 
